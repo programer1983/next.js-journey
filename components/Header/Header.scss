@@ -1,0 +1,21 @@
+.header{
+
+}
+
+
+.header__inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.header__title{
+    color: green;
+    font-size: 70px;
+    font-weight: bold;
+    background-color: rgb(134, 45, 45);
+    padding: 100px 80px;
+    border-radius: 10px;
+}
