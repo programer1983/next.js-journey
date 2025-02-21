@@ -1,0 +1,29 @@
+.button__header{
+    border: 1px solid black;
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.625rem;
+    background-color: rgb(236, 154, 72);
+    padding: 0.9375rem 2.1875rem;
+    border: 1px solid rgb(172, 85, 27);
+    border-radius: 2.1875rem;
+    transition: .3s ease;
+    &:hover{
+        background-color: rgb(180, 99, 19);
+    }
+}
+
+.button__title{
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+@media (max-width: 950px){
+    .button__header{
+        display: none;
+    }
+}
