@@ -1,0 +1,234 @@
+.hero{
+}
+
+.hero__inner{
+    position: relative;
+}
+
+.hero__video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero__content{
+    position: absolute;
+    top: 21.875rem;
+    left: 6.25rem;
+}
+
+.hero__content-subtitle{
+    color: rgb(222, 203, 203);
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    @media (max-width: 1400px){
+        font-size: 1.25rem;
+    }
+}
+
+.hero__content-title{
+    text-transform: capitalize;
+    color: white;
+    font-size: 3.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: -1.25rem;
+    max-width: 43.75rem;
+    @media (max-width: 1400px){
+        font-size: 3.125rem;
+        max-width: 37.5rem;
+    }
+}
+
+.hero__form{
+    position: absolute;
+    top: 65%;
+    left: 2.8125rem;
+    right: 2.8125rem;
+}
+
+.hero__form-title{
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border-radius: 0.625rem;
+    padding: 0.9375rem 3.125rem;
+    font-size: 30px;
+    width: 20%;
+    margin: 0 auto -0.3125rem;
+}
+
+.hero__form-inputs{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 3.125rem 4.375rem 4.375rem;
+    row-gap: 1.25rem;
+    border-radius: 1.25rem;
+    column-gap: 5rem;
+}
+
+.hero__form-inputicon{
+    display: flex;
+    align-items: center;
+}
+
+.hero__form-block{
+   width: 500px;
+}
+
+.hero__form-blockprice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-20px);
+}
+
+.hero__form-label{
+    color: rgb(100, 95, 95);
+    font-size: 1.5625rem;
+}
+
+.hero__form-input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.5625rem;
+    &::placeholder{
+        font-size: 18px;
+    }
+    &:focus{
+        border: none;
+        outline: none;
+    }
+}
+
+.hero__form-inputicon{
+    background-color: rgb(229, 215, 215);
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.875rem;
+    margin-top: 1.5625rem;
+}
+
+.hero__form-price{
+    font-size: 1.5625rem;
+    height: 0px;
+    transform: translateY(-10px);
+}
+
+.hero__form-range{
+    width: 100%;
+    
+}
+
+.hero__form-icon{
+    font-size: 2.1875rem;
+}
+
+.hero__form-rangeblock{
+    background-color: rgb(229, 215, 215);
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.875rem;
+    transform: translateY(-5px);
+}
+
+.hero__form-range{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+@media (max-width: 1700px){
+    .hero__content{
+        top: 12.5rem;
+    }
+    .hero__form{
+        top: 60%;
+    }
+    .hero__form-inputs{
+        padding: 2.5rem 3.75rem 3.125rem;
+    }
+    .hero__form-title{
+        padding: 0.9375rem 1.875rem;
+        font-size: 1.5625rem;
+    }
+}
+
+
+@media (max-width: 1400px){
+    .hero__form-title{
+        font-size: 1.125rem;
+        padding: 0.9375rem 1.875rem;
+    }
+    .hero__form-inputs{
+        padding: 20px 40px 30px;
+    }
+    .hero__form-inputicon{
+        margin-top: 0.9375rem;
+        padding: 0.4375rem 0.9375rem;
+    }
+    .hero__form-input{
+        background: transparent;
+        border: none;
+        width: 100%;
+        font-size: 0.9375rem;
+        &::placeholder{
+            font-size: 0.875rem;
+        }
+    }
+    .hero__form-icon{
+        font-size: 1.25rem;
+    }
+    .hero__form-label{
+        font-size: 1.125rem;
+    }
+    .hero__form-blockprice{
+        transform: translateY(0px);
+    }
+    .hero__form-price{
+        font-size: 1rem;
+    }
+    .hero__form-rangeblock{
+        padding: 0.25rem 0.9375rem;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 1100px){
+    .hero__inner{
+        height: 56.25rem;
+    }
+    .hero__form{
+        top: 50%;
+    }
+   .hero__form-inputs{
+      flex-direction: column;
+      width: 70%;
+      margin: 0 auto;
+   }
+   .hero__form-block{
+      width: 100%;
+   }
+}
+
+@media (max-width: 740px){
+    .hero__inner{
+        height: 53.125rem;
+    }
+    .hero__content{
+        left: 20px;
+    }
+    .hero__content-title{
+        font-size: 2.5rem;
+    }
+    .hero__form{
+        left: 0;
+        right: 0;
+    }
+    .hero__form-title{
+        width: 40%;
+    }
+}
+
+
