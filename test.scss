@@ -1,0 +1,14 @@
+.react-multiple-carousel__arrow--left{
+    position: absolute;
+    top: -5rem;
+    right: 0;
+    z-index: 2;
+    background-color: white; 
+    padding: 0.5rem;
+    -webkit-box-shadow: 1px 0px 15px -7px #000000; 
+    box-shadow: 1px 0px 15px -7px #000000;
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

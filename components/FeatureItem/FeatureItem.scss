@@ -1,0 +1,43 @@
+.feature__item{
+    position: relative;
+    overflow: hidden;
+    margin: 0 0.625rem;
+    &:hover{
+        .feature__item-image{
+            transform: scale(1.08);
+        }
+        .feature__item-des{
+            background-color: rgb(246, 144, 11);
+            padding-right: 30px;
+        }
+    }
+}
+.feature__item-image{
+   width: 100%;
+   object-fit: cover;
+   transition: transform .3s ease;
+}
+
+.feature__item-title{
+    position: absolute;
+    top: 0.9375rem;
+    left: 1.25rem;
+    color: white;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.feature__item-des{
+    position: absolute;
+    right: 0;
+    bottom: 0.9375rem;
+    z-index: 2;
+    background-color: rgb(43, 39, 39);
+    color: white;
+    font-size: 1.875rem;
+    padding: 0.625rem 1.25rem;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    transition: all .3s ease;
+}

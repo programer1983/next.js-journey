@@ -25,3 +25,32 @@ export const links = [
         offset: -50
     },
 ]
+
+export const FEATURE = [
+    {
+        title: 'france',
+        url: '/france.jpg',
+        des: '3 places'
+    },
+    {
+        title: 'australia',
+        url: '/australia.jpg',
+        des: '2 places'
+    },
+    {
+        title: 'germany',
+        url: '/germany.jpg',
+        des: '4 places'
+    },
+    {
+        title: 'hong kong',
+        url: '/hong-kong.jpg',
+        des: '2 places'
+    },
+    {
+        title: 'brazil',
+        url: '/brazil.jpg',
+        des: '3 places'
+    },
+   
+]
