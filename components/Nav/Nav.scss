@@ -11,6 +11,12 @@
     cursor: pointer;
     font-size: 1.125rem;
     font-weight: 600;
+    transition: all .3s ease;
+    border-bottom: 2px solid transparent;
+    &:hover{
+        color: rgb(246, 144, 11);
+        border-color: rgb(246, 144, 11);
+    }
 }
 
 @media (max-width: 950px){

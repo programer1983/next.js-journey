@@ -1,0 +1,39 @@
+.pacages{
+    margin-top: 9.375rem;
+    background-color: rgb(249, 238, 238);
+    padding: 2.5rem 0;
+}
+
+.pacages__items{
+    display: flex;
+    align-items: center;
+    column-gap: 1.25rem;
+    @media (max-width: 1500px){
+         flex-wrap: wrap;
+         row-gap: 3.125rem;
+         justify-content: center;
+    }
+}
+
+.pacages__subtitle{
+    color: rgb(246, 144, 11);
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.pacages__title{
+    color: black;
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-top: -1.25rem;
+    text-transform: capitalize;
+}
+
+.pacages__text{
+    color: rgb(154, 142, 142);
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-family: var(--nunitoFont);
+    margin-top: -1.5625rem;
+    max-width: 43.125rem;
+}
