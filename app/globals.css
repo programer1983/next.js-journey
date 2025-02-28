@@ -5,8 +5,8 @@
     --nunitoFont:  "Nunito", serif;
     --robotoFont:  "Roboto", serif;
     --overflowX: 'hidden';
+    --orngeColor: rgb(236, 154, 72);
 }
-
 
 body{
     font-family: var(--robotoFont);
