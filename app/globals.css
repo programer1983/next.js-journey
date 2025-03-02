@@ -11,12 +11,19 @@
 body{
     font-family: var(--robotoFont);
     overflow-x: var(--overflowX);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container{
     max-width: 1440px;
     padding: 0 1.25rem;
     margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
 }
 
 

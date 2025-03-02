@@ -1,0 +1,94 @@
+.getapp{
+    background-color: rgb(249, 238, 238);
+    padding: 4.375rem 0;
+    @media (max-width: 1090px){
+        padding: 0;
+    }
+}
+
+.getapp__inner{
+    display: flex;
+    @media (max-width: 1000px){
+        flex-direction: column;
+        row-gap: 12.5rem;
+        align-items: center;
+    }
+}
+
+
+.getapp__content{
+    flex-basis: 60%;
+    .getapp__content-title{
+        color: black;
+        font-size: 3.125rem;
+        font-weight: 700;
+        margin-bottom: 1.25rem;
+    }
+
+    .getapp__content-subtitle{
+        color: var(--orngeColor);
+        font-size: 1.5625rem;
+        margin-bottom: 1.875rem;
+    }
+
+    .getapp__content-text{
+        color: rgb(154, 142, 142);
+        font-size: 1.25rem;
+        line-height: 1.2;
+        font-family: var(--nunitoFont);
+        margin-bottom: 1.875rem;
+        max-width: 46.875rem;
+    }
+
+    .getapp__content-buttons{
+        display: flex;
+        align-items: center;
+        column-gap: 0.625rem;
+    }
+
+    .getapp__content-button{
+        display: flex;
+        align-items: center;
+        column-gap: 0.75rem;
+        padding: 0.8125rem 1.875rem;
+        border-radius: 35px;
+        background-color: black;
+        color: white;
+        font-weight: 600;
+        font-size: 0.9375rem;
+        border: none;
+        transition: background-color .4s ease;
+        &:hover{
+            background-color: rgb(54, 50, 50);
+        }
+        @media (max-width: 390px){
+            padding: 13px 15px;
+            column-gap: 0.1875rem;
+        }
+    }
+
+    .getapp__button-android{
+        background-color: var(--orngeColor);
+        transition: background-color .4s ease;
+        &:hover{
+            background-color: rgb(176, 125, 29);
+        }
+    }
+}
+
+.getapp__image{
+    flex-basis: 40%;
+    width: 100%;
+    .getapp__img{
+       object-fit: cover;
+       margin-top: -9.375rem;
+       width: 100%;
+       height: 100%;
+       @media (max-width: 1090px){
+           height: 120%;
+       }
+       @media (max-width: 1000px){
+          height: 100%;
+       }
+    }
+}

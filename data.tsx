@@ -141,3 +141,47 @@ export const ACCORDION = [
         answer: 'Contact via  phone, email, or live chat'
     },
 ]
+
+export const FOOTER_LINKS = [
+    {
+        title: 'Learn More',
+        links: [
+            'About Us',
+            'Destination',
+            'TravelGvides',
+            'Book Now',
+            'FAQ',
+            'Privacy Policy',
+        ]
+    },
+    {
+        title: 'Our  Commyntly',
+        links: [
+            'Teres and Conditions',
+            'Special Offers',
+            'Customer Reviews',
+        ]
+    }
+]
+
+export const FOOTER_CONTACT_INFO = {
+    title: 'Contact Us',
+    links: [
+        {label: 'Contact Number', value: '111222333'},
+        {label: 'Email  Address', value: 'info@passport.com'},
+    ]
+}
+ 
+
+
+export const SOCIALS = {
+    title: 'Social',
+    links: [
+        '/facebook.svg',
+        '/instagram.svg',
+        '/twitter.svg',
+        '/youtube.svg',
+        '/linkedin.svg',
+    ]
+}
+ 

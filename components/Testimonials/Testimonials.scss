@@ -1,10 +1,22 @@
 .testimonials{
     padding: 4.375rem 0;
-
+    position: relative;
+    z-index: 3;
+    background-color: white;
+    @media (max-width: 1090px){
+        padding-top: 20px;
+     }
     .testimonials__inner{
         display: flex;
         @media (max-width: 1090px){
-          flex-direction: column;
+           flex-direction: column;
+           height: 900px;
+        }
+        @media (max-width: 480px){
+            padding-bottom: 3.125rem;
+          }
+        @media (max-width: 390px){
+            padding-bottom: 5rem;
         }
     }
 }

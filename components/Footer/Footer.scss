@@ -1,0 +1,110 @@
+.footer{
+    padding: 3.125rem 0;
+    background-color: rgb(48, 45, 45);
+    position: relative;
+    z-index: 2;
+    margin-top: -18.75rem;
+    @media (max-width: 1220px){
+        margin-top: -13.75rem;
+    }
+    @media (max-width: 1090px){
+        margin-top: -100px;
+    }
+}
+
+.footer__inner{
+    background-color: rgb(233, 220, 220);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 0.9375rem;
+    @media (max-width: 1320px){
+        width: 80%;
+    }
+}
+
+
+.footer__columns{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 1.25rem 0 1.25rem;
+    flex-wrap: wrap;
+
+    .footer__block{
+    }
+
+    .footer__column{
+        padding-left: 0.625rem;
+    }
+
+    .footer__column-title{
+        font-size: 1.25rem;
+        padding-right: 10px;
+    }
+
+    .footer__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.25rem;
+        padding-left: 0px;
+    }
+
+    .footer__column-info{
+        display: flex;
+        align-items: center;
+        column-gap: 0.9375rem;
+        margin-top: -0.9375rem;
+         @media (max-width: 360px){
+           flex-wrap: wrap;
+        }
+    }
+    
+    .footer__label, .footer__value{
+        color: gray;
+        text-decoration: none;
+    }
+
+    .footer__link{
+        text-decoration: none;
+        color: gray;
+    }
+
+    .footer__column-contact{
+        display: block;
+        flex-direction: row;
+    }
+
+    .footer__social-list{
+        display: flex;
+        align-self: center;
+        column-gap: 0.625rem;
+        margin-left: -2.5rem;
+    }
+
+    .footer__social-image{
+        width: 1.75rem;
+        height: 1.75rem;
+        transition: transform .3s ease;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.footer__passport{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--orngeColor);
+    padding: 0.3125rem 1.5625rem 0.3125rem 1.5625rem;
+    border-bottom-right-radius: 0.9375rem;
+    border-bottom-left-radius: 0.9375rem;
+    span{
+        display: block;
+        color: white;
+        font-size: 1.125rem;
+    }
+    @media (max-width: 500px){
+        flex-direction: column;
+        row-gap: 0.625rem;
+    }
+}
