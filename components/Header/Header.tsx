@@ -7,6 +7,7 @@ import Nav from '../Nav/Nav'
 import MobileMenu from '../MobileMenu/MobilleMenu';
 import Button from '../Button/Button';
 import {IoMenu, IoClose } from "react-icons/io5";
+import Image from 'next/image';
 
 const Header = () => {
   const [active, setActive] = useState(false)
@@ -29,7 +30,7 @@ const Header = () => {
     <div className="container">
       <div className='header__inner'>
         <Link href='/' className='header__logo'>
-            <img src="./logo.svg" alt="logo" height={90} width={133}/>
+            <Image src="./logo.svg" alt="logo" height={90} width={133}/>
         </Link>
         <Nav />
         <div className="header__buttons">

@@ -14,11 +14,11 @@ const GetApp = () => {
                     </p>
                     <div className="getapp__content-buttons">
                         <button className="getapp__content-button getapp__button-apple" type='button'>
-                            <img src="/apple.svg" alt="image" />
+                            <Image src="/apple.svg" alt="image" width={25} height={25}/>
                             <span>App Store</span>
                         </button>
                         <button className="getapp__content-button getapp__button-android" type='button'>
-                            <img src="/android.svg" alt="image" />
+                            <Image src="/android.svg" alt="image" width={25} height={25}/>
                             <span>Play Store</span>
                         </button>
                     </div>
