@@ -10,6 +10,7 @@
     width: 18.75rem;
     padding: 1.875rem 0;
     transition: .3s ease;
+    z-index: 5;
 }
 
 .mobile{
@@ -24,6 +25,13 @@
     width: 18.75rem;
     padding: 1.875rem 0;
     transition: .3s ease;
+    z-index: 5;
+}
+
+.mobile__icon-menu{
+    position: absolute;
+    right: 0.625rem;
+    top: 0.625rem;
 }
 
 

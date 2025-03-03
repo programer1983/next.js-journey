@@ -44,10 +44,11 @@ const Header = () => {
           {!menuOpened ? 
             (<IoMenu className='header__icon' onClick={toggleMenu}/>) 
             : 
-            (<IoClose className='header__icon' onClick={toggleMenu}/>) }
+            (<IoClose className='header__icon' onClick={toggleMenu}/>)
+          }
         </div>
       </div>
-      <MobileMenu menuOpened={menuOpened}/>
+      <MobileMenu menuOpened={menuOpened} toggleMenu={toggleMenu}/>
     </div>     
     </header>
   )
