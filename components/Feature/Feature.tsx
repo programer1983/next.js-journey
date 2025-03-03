@@ -16,14 +16,6 @@ interface PrevArrowProps {
 
 const Feature = () => {
 
-  // const NextArrow = (props: any) => {
-  //      const {onClick} = props
-  //      return (
-  //       <div onClick={onClick} className='feature__button'>
-  //         <RiArrowRightSLine className='feature__right-icon'/>
-  //       </div>
-  //      )
-  // }
 
   const NextArrow = ({ onClick }: NextArrowProps) => {
     return (
@@ -36,20 +28,11 @@ const Feature = () => {
   const PrevArrow = ({ onClick }: PrevArrowProps) => {
     return (
       <div onClick={onClick} className='feature__button'>
-        <RiArrowLeftSLine className='feature__right-icon' />
+        <RiArrowLeftSLine className='feature__left-icon' />
       </div>
     );
   };
 
-
-//   const PrevArrow = (props: any) => {
-//     const {onClick} = props
-//     return (
-//      <div onClick={onClick} className='feature__button'>
-//        <RiArrowLeftSLine className='feature__left-icon'/>
-//      </div>
-//     )
-// }
 
   const settings = {
     arrows: true,
