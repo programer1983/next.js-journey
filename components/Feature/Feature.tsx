@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import './Feature.scss'
 import Slider from "react-slick";
@@ -6,25 +6,50 @@ import { FEATURE } from '@/data';
 import FeatureItem from '../FeatureItem/FeatureItem';
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
 
+interface NextArrowProps {
+  onClick?: () => void;
+}
+
+interface PrevArrowProps {
+  onClick?: () => void;
+}
+
 const Feature = () => {
 
-  const NextArrow = (pops: any) => {
-       const {onClick} = pops
-       return (
-        <div onClick={onClick} className='feature__button'>
-          <RiArrowRightSLine className='feature__right-icon'/>
-        </div>
-       )
-  }
+  // const NextArrow = (props: any) => {
+  //      const {onClick} = props
+  //      return (
+  //       <div onClick={onClick} className='feature__button'>
+  //         <RiArrowRightSLine className='feature__right-icon'/>
+  //       </div>
+  //      )
+  // }
 
-  const PrevArrow = (pops: any) => {
-    const {onClick} = pops
+  const NextArrow = ({ onClick }: NextArrowProps) => {
     return (
-     <div onClick={onClick} className='feature__button'>
-       <RiArrowLeftSLine className='feature__left-icon'/>
-     </div>
-    )
-}
+      <div onClick={onClick} className='feature__button'>
+        <RiArrowRightSLine className='feature__right-icon' />
+      </div>
+    );
+  };
+
+  const PrevArrow = ({ onClick }: PrevArrowProps) => {
+    return (
+      <div onClick={onClick} className='feature__button'>
+        <RiArrowLeftSLine className='feature__right-icon' />
+      </div>
+    );
+  };
+
+
+//   const PrevArrow = (props: any) => {
+//     const {onClick} = props
+//     return (
+//      <div onClick={onClick} className='feature__button'>
+//        <RiArrowLeftSLine className='feature__left-icon'/>
+//      </div>
+//     )
+// }
 
   const settings = {
     arrows: true,
