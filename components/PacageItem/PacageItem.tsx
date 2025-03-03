@@ -11,11 +11,12 @@ type PacageItem = {
     url: string;
     des: string;
     duration: string;
+    index: number;
 }
 
-const PacageItem = ({title, location, price, url, des, duration}: PacageItem) => {
+const PacageItem = ({title, location, price, url, des, duration, index}: PacageItem) => {
   return (
-    <div className='pacage__item'>
+    <div className='pacage__item' data-aos="fade-up" data-aos-anchor-placement="top-center"  data-aos-delay={`${index * 250}`}>
        <Link href='/' className='pacage__item-link'>
           <Image 
             src={url} 

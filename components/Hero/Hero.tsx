@@ -8,12 +8,12 @@ function Hero() {
     <section className='hero' id='home'>
       <div className="hero__inner">
         <video className='hero__video' src="./video.mp4" muted autoPlay loop></video>
-        <div className="hero__content">
+        <div className="hero__content" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="300">
           <h3 className='hero__content-subtitle'>TRAVEL TO ANY CORNER OF THE WORLD</h3>
           <h1 className='hero__content-title'>make your tour amazing with us</h1>
         </div>
 
-        <div className="hero__form">
+        <div className="hero__form" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
           <h3 className='hero__form-title'>Search for Your Trip</h3>
           <div className="hero__form-inputs">
             

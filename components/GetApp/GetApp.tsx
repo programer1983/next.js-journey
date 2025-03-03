@@ -6,7 +6,7 @@ const GetApp = () => {
     <section className='getapp'>
         <div className="container">
             <div className="getapp__inner">
-                <div className="getapp__content">
+                <div className="getapp__content" data-aos="fade-right" data-aos-anchor-placement="top-center">
                     <h2 className="getapp__content-title">Go our app now!</h2>
                     <h4 className="getapp__content-subtitle">Avialable for 10% and android</h4>
                     <p className="getapp__content-text">
@@ -23,7 +23,7 @@ const GetApp = () => {
                         </button>
                     </div>
                 </div>
-                <div className="getapp__image">
+                <div className="getapp__image" data-aos="fade-left" data-aos-anchor-placement="top-center">
                   <Image 
                     src='/phones.png' 
                     alt='image' 

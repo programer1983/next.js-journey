@@ -12,8 +12,12 @@ const Pacages = () => {
                     <h3 className='pacages__title'>we provide top destination</h3>
                     <p className='pacages__text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, omnis aliquid cum at quaerat hic eligendi exercitationem harum error alias.</p>
                 </div>
-                <div className='pacages__items'>
-                    {PACAGES.map((elem) => (
+                <div className='pacages__items' 
+                     data-aos="fade-up" 
+                     data-aos-anchor-placement="top-center" 
+                     data-aos-delay="50"
+                >
+                    {PACAGES.map((elem, index) => (
                         <PacageItem 
                            key={elem.url}
                            title={elem.title}
@@ -22,6 +26,7 @@ const Pacages = () => {
                            url={elem.url}
                            des={elem.des}
                            duration={elem.duration}
+                           index={index}
                         />
                     ))}
                 </div>
